@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<title>   Hesap Makinesi  </title> 
+
+<script language="javaScript"> 
+ 
+function topla(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)+parseFloat(ne.say2.value); 
+} 
+function çikar(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)-parseFloat(ne.say2.value); 
+} 
+function çarp(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)*parseFloat(ne.say2.value); 
+} 
+function böl(ne){ 
+ne.sonuç.value=parseFloat(ne.say1.value)/parseFloat(ne.say2.value); 
+} 
+function ort(ne){ 
+ne.sonuç.value=[parseFloat(ne.say1.value)+parseFloat(ne.say2.value)]/2; 
+} 
+</script> 
+ 
+</head> 
+<body> 
+<table border="50" width="550" height="550" bgcolor="red"><tr><td> 
+
+<form name="formum"><font color="black" size="7" face="helvetica"> 
+<p align="center">Hesap Makinesi</p> </font>
+
+<font color="black" size="4" face="helvetica">
+<p align="center">1.Sayi:    <input type="text" name="say1"> </p>
+<p align="center">2.Sayi:    <input type="text" name="say2"> </p>
+<p align="center">Sonuç:    <input type="text" name="sonuç"> </p>
+</font>
+
+<center>
+<input type="button" value="+" onclick="topla(this.form)"> 
+<input type="button" value="-" onclick="çikar(this.form)"> 
+<input type="button" value="x" onclick="çarp(this.form)"> 
+<input type="button" value="/" onclick="böl(this.form)"> 
+<input type="button" value="ort" onclick="ort(this.form)"> 
+</center>
+
+</form> 
+ 
+ 
+</td></tr></table> 
+</body> 
+</html>
